@@ -7,23 +7,23 @@ services:
     container_name: web-desktopcont1
     restart: always
     ports:
-      - "8081:80"
+      - "5001:3000"
 
   web-desktopcont2:
     build: ./server1.com
     container_name: web-desktopcont2
     ports:
-      - "8082:80"
+      - "5002:3000"
 
   web-mobilecont1:
     build: ./server2.com
     container_name: web-mobilecont1
     ports:
-      - "8083:80"
+      - "5003:3000"
 
 
   web-mobilecont2:
     build: ./server2.com
     container_name: web-mobilecont2
     ports:
-      - "8084:80"
+      - "5004:3000"
